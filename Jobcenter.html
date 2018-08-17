@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jobcenter</title>
+<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url(Image/Landscape2.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        div {
+            background-color: #001530;
+        
+            position: fixed;
+            left: 36%;
+            top:30%;
+            width: 400px;
+            height: 300px;
+            border: 3px solid Gold;
+            border-radius: 25px;
+            opacity: 0.9
+
+        }
+
+
+        p {
+            color: white;
+            font-family: font-family: 'Quicksand', sans-serif;
+            margin: 30px 30px;
+            font-size: 2.0em;
+            opacity: 1.0;
+            text-shadow: 4px 4px 4px #000;
+
+        }
+
+        h1 {
+            color: Gold;;
+            font-size: 4em;
+            margin: 15px 100px;
+        }
+        p.Unterschrift {
+            font-size: 2em;
+            margin:auto
+            font-size: 2.4em;
+            font-family: 'Cookie', cursive;
+            color: gold;
+            
+        }
+        .button {
+            position: fixed; 
+  top: 80%;
+  left: 43%;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+        
+    </style>
+
+</head>
+
+<body>
+    
+    <script>function showDiv() {
+   document.getElementById('fenster').style.display = "block";
+}</script>
+    
+   
+<button class="button" value="Show Div" onclick="showDiv()"><span>Klicken </span></button>
+    <div id="fenster" style="display:none" class=window>
+
+        <h1>Danke!</h1>
+
+        <p>
+
+            Dass sie es mir ermöglichen ein Web-Developer zu werden. 
+        
+
+        </p>
+        
+        <p class="Unterschrift">- Sharif Ibrahim</p>
+    
+
+    </div>
+
+<img src="Image/DCI.png" alt=DCI>
+
+
+
+</body>
+
+</html>
